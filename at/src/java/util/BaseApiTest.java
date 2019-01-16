@@ -10,7 +10,7 @@ import org.apache.http.HttpStatus;
 
 import static io.restassured.specification.ProxySpecification.host;
 
-public class GenericRest
+public abstract class BaseApiTest
 {
     private Gson gson = new Gson();
     private Response response;
@@ -20,7 +20,7 @@ public class GenericRest
 
     static
     {
-        RestAssured.proxy = host("10.9.1.80").withPort(8080);
+//        RestAssured.proxy = host("10.9.1.80").withPort(8080);
         RestAssured.baseURI = "http://restapi.demoqa.com/utilities/weather/city";
     }
 

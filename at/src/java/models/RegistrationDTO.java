@@ -1,6 +1,6 @@
 package models;
 
-public class Registration
+public class RegistrationDTO
 {
     private String FirstName;
     private String LastName;
@@ -31,5 +31,15 @@ public class Registration
     public void setEmail(String email)
     {
         this.Email = email;
+    }
+
+    public RegistrationDTO newInstance()
+    {
+        setFirstName("Virender");
+        setLastName("Singh");
+        setUserName("63userf2d3d2011");
+        setPassword("password1");
+        setEmail("ed26dff39@gmail.com");
+        return this;
     }
 }

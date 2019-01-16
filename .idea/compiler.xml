@@ -6,8 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="apitest" />
+        <module name="at" />
+        <module name="backend" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="apitest" target="1.8" />
+      <module name="at" target="1.5" />
+      <module name="backend" target="1.8" />
+      <module name="maven-archiver" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
